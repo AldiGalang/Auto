@@ -18,5 +18,3 @@ sudo lsof -t -i:8103 | xargs kill -9
 gaianet start --base $HOME/gaia-node-103
 # Get nodeID and deviceID
 gaianet info --base $HOME/gaia-node-103
-# Permission and Running
-chmod +x auto3.sh && ./auto3.sh
