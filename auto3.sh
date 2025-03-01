@@ -9,7 +9,7 @@ curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/
 # Load new environment variables
 source $HOME/.bashrc
 # Initialize Gaia node
-gaianet init --base $HOME/gaia-node-103 config --chat-url https://huggingface.co/gaianet/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/Qwen2.5-0.5B-Instruct-Q5_K_M.gguf --prompt-template chatml
+gaianet init --base $HOME/gaia-node-101 --config https://huggingface.co/gaianet/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/Qwen2.5-0.5B-Instruct-Q5_K_M.gguf
 gaianet config --base $HOME/gaia-node-103 --port 8103
 gaianet init --base $HOME/gaia-node-103
 # Kill any process using port 8103
