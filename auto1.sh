@@ -7,7 +7,7 @@ mkdir -p $HOME/gaia-node-101
 # Install Gaia node
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --base $HOME/gaia-node-101 && source $HOME/.bashrc
 # Initialize Gaia node
-gaianet init --base $HOME/gaia-node-101 config --chat-url https://huggingface.co/gaianet/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/Qwen2.5-0.5B-Instruct-Q5_K_M.gguf --prompt-template chatml
+gaianet init --base $HOME/gaia-node-101 --config https://huggingface.co/gaianet/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/Qwen2.5-0.5B-Instruct-Q5_K_M.gguf
 gaianet config --base $HOME/gaia-node-101 --port 8101
 gaianet init --base $HOME/gaia-node-101
 # Kill any process using port 8101
