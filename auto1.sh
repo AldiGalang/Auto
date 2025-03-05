@@ -5,7 +5,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 # Create folder for Gaia node
 mkdir -p $HOME/gaia-node-101
 # Install Gaia node
-curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --base $HOME/gaia-node-101 && source $HOME/.bashrc
+curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --base $HOME/gaia-node-101 &&  --ggmlcuda 12 --base $HOME/gaia-node-101 && source $HOME/.bashrc
 # Initialize Gaia node
 gaianet init --base $HOME/gaia-node-101 --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/qwen2-0.5b-instruct/config.json
 gaianet config --base $HOME/gaia-node-101 --port 8101
