@@ -4,7 +4,7 @@
 sudo apt update && sudo apt install -y git python3 python3.12-venv screen
 
 # Clone repository
-git clone https://raw.githubusercontent.com/AldiGalang/Auto.git
+git clone https://github.com/AldiGalang/Auto.git
 cd Auto
 
 # Setup virtual environment
